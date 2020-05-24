@@ -68,8 +68,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     right: 0.5em;
 }
+.navbar-light .navbar-toggler-icon{
+    background-color: white;
+}
 
-/* Styling for the card with image and about me info */
+/* Styling for the standard card */
 .card {
     padding: 1em;
     margin: 2em;
@@ -78,23 +81,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
-      
 }
 .card h2 {
     font-family: 'Futura', sans-serif;
     font-size: 20px;
-    color: #ffffff;
-}
-#bio-image {
-    position: relative;
-    float: left;
-    border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
-    max-width: 300px;
-    margin: 20px;
-}
-.card-text {
-    margin: 0, 0, 20px, 0;
-    padding: 0;
     color: #ffffff;
 }
 .btn-primary {
@@ -124,8 +114,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 hr {
     background-color: white;
 }
-.navbar-light .navbar-toggler-icon{
-    background-color: white;
+
+/* Styling for the about me card */
+#bio-image {
+    position: relative;
+    float: left;
+    border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
+    max-width: 300px;
+    margin: 20px;
+}
+.card-text {
+    margin: 0, 0, 20px, 0;
+    padding: 0;
+    color: #ffffff;
 }
 
 /* Styling for the contact me card */
@@ -141,6 +142,38 @@ label {
     border-width: 2px;
 }
 
+/* Styling for the Portfolio card */
+.image-holder {
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+    margin: 10px 0 10px 0;
+  }
+  .image-holder img {
+      width: 100%;
+      border-radius: 0.5em;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+  }
+  .image-holder .image-text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10px; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 100%; /* Set the width of the positioned div */
+    background: #4651eb;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.image-text h3 {
+    font-size: 20px;
+    padding: 5px 0px 0px 0px;
+    color: white;
+}
 /* Setting the background image */
 body {
         background-image: url("../assets/background.png");
