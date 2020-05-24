@@ -1,6 +1,16 @@
 /* Importing fonts from Google */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
+/* Setting the font for any and all elements I choose to use */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Setting the margin for all buttons */
+
+.btn {
+    margin: 15px 0 15px 0;
+}
 /* Styling the navigation elements */
 .navbar-brand {
     padding: 20px;
@@ -46,13 +56,13 @@
 .active a {
     font-weight: 600;
     text-decoration: underline !important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
     color: #ffffff;
 }
 .nav-link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }   
 .navbar-expand-lg .navbar-collapse {
     position: absolute;
@@ -71,7 +81,7 @@
       
 }
 .card h2 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Futura', sans-serif;
     font-size: 20px;
     color: #ffffff;
 }
@@ -116,6 +126,19 @@ hr {
 }
 .navbar-light .navbar-toggler-icon{
     background-color: white;
+}
+
+/* Styling for the contact me card */
+
+.text-muted {
+    color: #ffaaaa !important;
+}
+label {
+    color: white;
+}
+.form-control:focus {
+    border-color: #ffaaaa;
+    border-width: 2px;
 }
 
 /* Setting the background image */
