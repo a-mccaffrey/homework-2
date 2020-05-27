@@ -89,6 +89,10 @@ video {
 a:hover {
   color: #cd94bb;
 }
+a,
+u:hover {
+  color: #cd94bb;
+}
 
 /* Setting the background image */
 body {
@@ -96,6 +100,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 /* Setting the margin for all buttons */
 
@@ -297,13 +303,12 @@ label {
 }
 
 /* Styling the footer */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
+#myfooter {
+  margin-top: auto;
   height: 60px;
-  line-height: 60px;
-  background-color: #f5f5f5;
-  margin-left: auto;
+  background-color: white;
   text-align: center;
+  padding-top: 20px;
+  color: #ffaaaa;
 }
